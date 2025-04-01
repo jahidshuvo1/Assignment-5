@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <nav class="drop-shadow-lg mt-6 ml-16 pr-10">
+            <div class="flex justify-between px-6 py-6 rounded-xl bg-white">
+            <!-- div-1 -->
+            <div class="flex">
+                <img class="w-8 h-8" src="assets/logo.png" alt="">
+                <h1 class="text-xl"><span class="text-lime-900">Dev</span><span class="font-bold text-xl text-lime-950">Board</span></h1>
+            </div> 
+            <button onclick="backToMain()" class="btn btn-primary">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="font-bold text-xl text-center my-4">Blogs</section>
+        <section class="mx-16 space-y-10">
+            <div class="w-6xl h-28 bg-white drop-shadow-lg rounded-sm">
+                <p class="pl-4 pt-4 font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+                <p class="text-gray-300">............................................................................................................................................................................................................................................................................................................................................</p>
+                <p class="pl-4">1.getElementsByTagName() 
+                    2.getElementsByClassName()
+                    3.getElementById()
+                    4.querySelector()
+                    5.querySelectorAll()</p>
+            </div>
+            <div class="w-6xl h-30 bg-white drop-shadow-lg rounded-sm">
+                <p class="pl-4 pt-4 font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</p>
+                <p class="text-gray-300">............................................................................................................................................................................................................................................................................................................................................</p>
+                <p class="pl-4">In HTML, innerHTML, innerText, and textContent are properties of the DOM (Document Object Model). They allow you to read and update the content of HTML elements.</p>
+            </div>
+            <div class="w-6xl h-30 bg-white drop-shadow-lg rounded-sm">
+                <p class="pl-4 pt-4 font-bold">Question-3: What is event delegation in the DOM?</p>
+                <p class="text-gray-300">............................................................................................................................................................................................................................................................................................................................................</p>
+                <p class="pl-4">Event delegation is a technique in JavaScript where a parent element handles events for its child elements, leveraging event bubbling to efficiently manage events, especially for dynamically added or removed elements.</p>
+            </div>
+            <div class="w-6xl h-30 bg-white drop-shadow-lg rounded-sm">
+                <p class="pl-4 pt-4 font-bold">Question-4: What is event bubbling in the DOM?</p>
+                <p class="text-gray-300">............................................................................................................................................................................................................................................................................................................................................</p>
+                <p class="pl-4">In the DOM, event bubbling is a mechanism where an event triggered on a child element propagates upwards through its parent and ancestor elements, allowing parent elements to respond to events originating from their children.</p>
+            </div>
+            <div class="w-6xl h-28 bg-white drop-shadow-lg rounded-sm">
+                <p class="pl-4 pt-4 font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+                <p class="text-gray-300">............................................................................................................................................................................................................................................................................................................................................</p>
+                <p class="pl-4">In JavaScript, you can use methods like createElement , appendChild , removeChild , and properties like innerHTML and textContent'</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        function backToMain(){
+         window.location.href="./index.html"
+}
+    </script>
+    <script src="event.js"></script>
+    <script src="index.html"></script>
+</body>
+</html>

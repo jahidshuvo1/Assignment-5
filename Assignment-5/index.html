@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<header>
+    <nav class="drop-shadow-lg mt-6 ml-18 pr-6">
+        <div class="flex justify-between px-6 py-6 rounded-xl bg-white">
+        <!-- div-1 -->
+        <div class="flex">
+            <img class="w-8 h-8" src="assets/logo.png" alt="">
+            <h1 class="text-xl"><span class="text-lime-900">Dev</span><span class="font-bold text-xl text-lime-950">Board</span></h1>
+        </div> 
+        <!-- div-2 -->
+        <div class="flex">
+            <div class="flex bg-gray-100 w-20 h-9 rounded-full mr-9">
+            <img class="w-5 h-5 my-2 ml-3" src="assets/checkbox.png" alt="">
+            <h1 class="font-bold text-xl ml-3 mt-1">23</h1>     
+            </div>
+            <div class="bg-gray-100 w-10 h-10 rounded-full"><img onclick="randomBgColor()" class="p-2" src="assets/theme-btn.png" alt=""></div>
+        </div>
+        </div>
+    </nav>
+</header>
+<main class="flex">
+    <section class="w-6xl h-4xl bg-white rounded-2xl drop-shadow-xl mt-5 mx-18">
+    <div class="flex gap-x-6 ml-3"> <!-- parents div-1 -->
+        <!-- child div-1 -->
+        <div class="flex bg-gray-100 h-20 w-52 rounded-xl ml-5 mt-5">
+            <div class="bg-white rounded-full w-14 h-14 ml-4 mt-3">
+                <img class="ml-4 mt-4 w-6 h-6" src="assets/checkbox.png" alt=""> 
+            </div>
+            <div class="ml-4 mt-3">
+             <p class="font-medium">Task Assigned</p>
+             <h1 class="font-black">06</h1> 
+            </div>
+         </div>
+         <!-- child div-2 -->
+         <div class="w-sm h-20 flex p-4 mt-5 ml-4 bg-gradient-to-r from-indigo-500 via-indigo-500 to-indigo-300 rounded-xl">
+            <img class="ml-6" src="assets/board.png" alt="">
+            <p onclick="openPage()" class="text-white font-medium ml-4 mt-4">Discover Something New Today!</p>
+         </div>
+         <!-- child div-3  -->
+         <div class="flex bg-gray-100 h-20 w-52 rounded-xl mt-5 ml-4">
+            <div class="bg-white rounded-full w-14 h-14 ml-4 mt-3">
+                <img class="ml-4 mt-4 w-6 h-6" src="assets/calender.png" alt=""> 
+            </div>
+            <div class="ml-4 mt-3">
+             <p class="font-medium">Wed,</p>
+             <h1 class="font-bold">Jul 08 2025</h1> 
+            </div>
+         </div>
+    </div>
+    <div class="mt-8 grid grid-cols-3 gap-x-6 gap-y-6 px-4"> <!-- parents div-2  -->
+        <div class="h-sm w-2xs bg-gray-100 rounded-lg"> <!-- child div-01 -->
+            <div class="bg-white w-22 h-10 rounded-lg mt-4 ml-4">
+             <p class="p-2">ShopEase</p>
+            </div>
+           <h1 class="font-bold mt-2.5 ml-4">Fix Mobile Button Issue </h1>
+           <p class="w-3xs h-30 bg-white rounded-xl ml-4 mt-4 p-2.5">Debug using Chrome DevTools, check for overlapping elements, and   ensure onClick works properly</p>
+           <div class="flex justify-between mb-2.5">
+            <div class="ml-4 mt-4">
+                <p>Deadline</p>
+                <h2 class="font-bold">21 March 2025<h2>    
+            </div>
+            <button id="myButton" onclick="disableButton(), showAlert()" class="btn btn-primary rounded-lg mr-4 mt-4">Complete</button>
+           </div>
+        </div>
+        <div class="h-sm w-2xs bg-gray-100 rounded-lg"> <!-- child div-02 -->
+            <div class="bg-white w-22 h-10 rounded-lg mt-4 ml-4">
+             <p class="p-2">CloudSync</p>
+            </div>
+           <h1 class="font-bold mt-2.5 ml-4">Add Dark Mode</h1>
+           <p class="w-3xs h-30 bg-white rounded-xl ml-4 mt-4 p-2.5">Debug using Chrome DevTools, check for overlapping elements, and   ensure onClick works properly</p>
+           <div class="flex justify-between mb-2.5">
+            <div class="ml-4 mt-4">
+                <p>Deadline</p>
+                <h2 class="font-bold">21 March 2025<h2>    
+            </div>
+            <button id="myButton02" onclick="disableButton(), showAlert()" class="btn btn-primary rounded-lg mr-4 mt-4">Complete</button>
+           </div>
+        </div>
+        <div class="h-sm w-2xs bg-gray-100 rounded-lg"> <!-- child div-03 -->
+            <div class="bg-white w-22 h-10 rounded-lg mt-4 ml-4">
+             <p class="p-2">SwiftPay</p>
+            </div>
+           <h1 class="font-bold mt-2.5 ml-4">Optimize Home page</h1>
+           <p class="w-3xs h-30 bg-white rounded-xl ml-4 mt-4 p-2.5">Debug using Chrome DevTools, check for overlapping elements, and   ensure onClick works properly</p>
+           <div class="flex justify-between mb-2.5">
+            <div class="ml-4 mt-4">
+                <p>Deadline</p>
+                <h2 class="font-bold">21 March 2025<h2>    
+            </div>
+            <button id="myButton03" onclick="disableButton(), showAlert()" class="btn btn-primary rounded-lg mr-4 mt-4">Complete</button>
+           </div>
+        </div>
+        <div class="h-sm w-2xs bg-gray-100 rounded-lg"> <!-- child div-04 -->
+            <div class="bg-white w-22 h-10 rounded-lg mt-4 ml-4">
+             <p class="p-2">Meta</p>
+            </div>
+           <h1 class="font-bold mt-2.5 ml-4">Add New Emoji 🤲</h1>
+           <p class="w-3xs h-30 bg-white rounded-xl ml-4 mt-4 p-2.5">Debug using Chrome DevTools, check for overlapping elements, and   ensure onClick works properly</p>
+           <div class="flex justify-between 2.5">
+            <div class="ml-4 mt-4">
+                <p>Deadline</p>
+                <h2 class="font-bold">21 March 2025<h2>    
+            </div>
+            <button id="myButton04" onclick="disableButton(), showAlert()" class="btn btn-primary rounded-lg mr-4 mt-4">Complete</button>
+           </div>
+        </div>
+        <div class="h-sm w-2xs bg-gray-100 rounded-lg"> <!-- child div-05 -->
+            <div class="bg-white w-26 h-10 rounded-lg mt-4 ml-4">
+             <p class="p-2">Google LLC</p>
+            </div>
+           <h1 class="font-bold mt-2.5 ml-4">Integrate OpenAI API </h1>
+           <p class="w-3xs h-30 bg-white rounded-xl ml-4 mt-4 p-2.5">Debug using Chrome DevTools, check for overlapping elements, and   ensure onClick works properly</p>
+           <div class="flex justify-between mb-2.5">
+            <div class="ml-4 mt-4">
+                <p>Deadline</p>
+                <h2 class="font-bold">21 March 2025<h2>    
+            </div>
+            <button id="myButton05" onclick="disableButton(), showAlert()" class="btn btn-primary rounded-lg mr-4 mt-4">Complete</button>
+           </div>
+        </div>
+        <div class="h-sm w-2xs bg-gray-100 rounded-lg"> <!-- child div-06 -->
+            <div class="bg-white w-22 h-10 rounded-lg mt-4 ml-4">
+             <p class="p-2">Glassdoar</p>
+            </div>
+           <h1 class="font-bold mt-2.5 ml-4">Improve Job searching </h1>
+           <p class="w-3xs h-30 bg-white rounded-xl ml-4 mt-4 p-2.5">Debug using Chrome DevTools, check for overlapping elements, and   ensure onClick works properly</p>
+           <div class="flex justify-between mb2.5">
+            <div class="ml-4 mt-4">
+                <p>Deadline</p>
+                <h2 class="font-bold">21 March 2025<h2>    
+            </div>
+            <button id="myButton06" onclick="disableButton(), showAlert()" class="btn btn-primary rounded-lg mr-4 mt-4">Complete</button>
+           </div>
+        </div>
+    </div> 
+    </section>
+    <section class="bg-white w-xs h-4xl rounded-2xl drop-shadow-xl mt-5 mr-6">
+        <div>
+            <div class="flex ml-20 mt-6">
+                <img class="pr-3" src="assets/activity.png" alt="">
+                <p class="font-medium">Active Log</p>
+            </div>
+            <button class="btn btn-primary ml-20 mt-4 rounded-lg">Clear History</button>
+         </div>
+    </section>
+</main>
+<script>
+    function openPage(){
+    window.location.href="./inside.html"
+}
+</script>
+<script>
+    function disableButton() {
+        document.getElementById("myButton").disabled = true;
+}
+</script>
+<script>
+    function disableButton() {
+        document.getElementById("myButton02").disabled = true;
+}
+</script>
+<script>
+    function disableButton() {
+        document.getElementById("myButton03").disabled = true;
+}
+</script>
+<script src="style.js"></script>
+<script src="inside.html"></script>
+</body>
+</html>
