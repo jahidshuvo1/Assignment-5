@@ -10,6 +10,10 @@ function showAlert(){
     alert("Board Updated Successfully");
 }
 
+function openPage(){
+    window.location.href="./inside.html"
+}
+
 function disableButton() {
     document.getElementById("myButton").disabled = true;
 }
@@ -19,7 +23,13 @@ function disableButton() {
 function disableButton() {
     document.getElementById("myButton03").disabled = true;
 }
-
-function openPage(){
-    window.location.href="./inside.html"
+function disableButton() {
+    document.getElementById("myButton04").disabled = true;
 }
+function disableButton() {
+    document.getElementById("myButton05").disabled = true;
+}
+function disableButton() {
+    document.getElementById("myButton06").disabled = true;
+}
+disableButton();
