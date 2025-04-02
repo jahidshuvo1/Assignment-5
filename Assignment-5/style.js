@@ -17,19 +17,19 @@ function openPage(){
 function disableButton() {
     document.getElementById("myButton").disabled = true;
 }
-function disableButton() {
+function disableButton02() {
     document.getElementById("myButton02").disabled = true;
 }
-function disableButton() {
+function disableButton03() {
     document.getElementById("myButton03").disabled = true;
 }
-function disableButton() {
+function disableButton04() {
     document.getElementById("myButton04").disabled = true;
 }
-function disableButton() {
+function disableButton05() {
     document.getElementById("myButton05").disabled = true;
 }
-function disableButton() {
+function disableButton06() {
     document.getElementById("myButton06").disabled = true;
 }
-disableButton();
+
