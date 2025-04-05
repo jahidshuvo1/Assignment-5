@@ -10,6 +10,10 @@ function showAlert(){
     alert("Board Updated Successfully");
 }
 
+function showAlert02(){
+    alert('Congress!!! You have completed att the current task')
+}
+
 function openPage(){
     window.location.href="./inside.html"
 }
